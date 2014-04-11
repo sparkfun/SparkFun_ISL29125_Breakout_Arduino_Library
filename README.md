@@ -8,8 +8,9 @@ A Breakout Board for the ISL29125 RGB Light Sensor.
 
 Repository Contents
 -------------------
-* **/Hardware** - All Eagle design files (.brd, .sch)
-* **/Production** - Test bed files and production panel files
+* **/hardware** - All Eagle design files (.brd, .sch)
+* **/libraries** - Contains the Arduino library and examples for the sensor
+* **/production** - Test bed files and production panel files
 
 
 License Information
