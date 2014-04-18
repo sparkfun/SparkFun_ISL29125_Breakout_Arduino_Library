@@ -7447,7 +7447,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="150.876" y="7.112" size="2.1844" layer="94">Jordan McConnell</text>
-<text x="238.252" y="7.112" size="2.1844" layer="94">v01</text>
+<text x="238.252" y="7.112" size="2.1844" layer="94">v10</text>
 <text x="144.78" y="73.66" size="1.778" layer="97">7bit:    0x44</text>
 <text x="144.78" y="76.2" size="1.778" layer="97">I2C Address:</text>
 <text x="144.78" y="71.12" size="1.778" layer="97">Read: 0x89</text>
