@@ -42,9 +42,15 @@ void setup()
 // Read sensor values for each color and print them to serial monitor
 void loop()
 {
-  Serial.print("Red: "); Serial.println(RGB_sensor.readRed(),HEX);
-  Serial.print("Green: "); Serial.println(RGB_sensor.readGreen(),HEX);
-  Serial.print("Blue: "); Serial.println(RGB_sensor.readBlue(),HEX);
+  // Read sensor values (16 bit integers)
+  unsigned int red = RGB_sensor.readRed();
+  unsigned int green = RGB_sensor.readGreen();
+  unsigned int blue = RGB_sensor.readBlue();
+  
+  // Print out readings, change HEX to DEC if you prefer decimal output
+  Serial.print("Red: "); Serial.println(red,HEX);
+  Serial.print("Green: "); Serial.println(green,HEX);
+  Serial.print("Blue: "); Serial.println(blue,HEX);
   Serial.println();
   delay(2000);
 }
