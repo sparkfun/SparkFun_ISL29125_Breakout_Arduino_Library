@@ -1,5 +1,5 @@
 /******************************************************************************
-SFE_ISL29125.cpp
+SparkFunISL29125.cpp
 Core implementation file for the ISL29125 RGB sensor library.
 Jordan McConnell @ SparkFun Electronics
 25 Mar 2014
@@ -16,7 +16,7 @@ This code is beerware; if you see me (or any other SparkFun employee) at the loc
 Distributed as-is; no warranty is given. 
 ******************************************************************************/
 
-#include "SFE_ISL29125.h"
+#include "SparkFunISL29125.h"
 
 // Constructor - Creates sensor object and sets I2C address
 SFE_ISL29125::SFE_ISL29125(uint8_t addr) 

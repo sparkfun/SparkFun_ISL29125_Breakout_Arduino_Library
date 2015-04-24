@@ -3,7 +3,7 @@ ISL29125_RGB_LED.ino
 Example for using the ISL29125 RGB sensor library along with an RGB LED.
 Jordan McConnell @ SparkFun Electronics
 11 Apr 2014
-https://github.com/sparkfun/ISL29125_Breakout
+https://github.com/sparkfun/SparkFun_ISL29125_Breakout_Arduino_Library
 
 This example declares an SFE_ISL29125 object called RGB_sensor. The 
 object/sensor is initialized with a basic configuration so that it continuously
@@ -21,14 +21,14 @@ Arduino Uno
 Arduino IDE 1.0.5
 
 Requires:
-SFE_ISL29125_Library
+SparkFun_ISL29125_Arduino_Library
 
 This code is beerware.
 Distributed as-is; no warranty is given. 
 ******************************************************************************/
 
 #include <Wire.h>
-#include "SFE_ISL29125.h"
+#include "SparkFunISL29125.h"
 
 // Declare pins for RGB LED, all PWM pins
 uint8_t rPin = 3;

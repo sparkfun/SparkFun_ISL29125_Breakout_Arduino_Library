@@ -3,7 +3,7 @@ ISL29125_interrupts.ino
 Example demonstrating use of the ISL29125 RGB sensor library with interrupts.
 Jordan McConnell @ SparkFun Electronics
 18 Apr 2014
-https://github.com/sparkfun/ISL29125_Breakout
+https://github.com/sparkfun/SparkFun_ISL29125_Breakout_Arduino_Library
 
 This example shows how to use the ISL29125 sensor using interrupts. It
 demonstrates how to make a more advanced configuration to set this up that goes
@@ -19,14 +19,14 @@ Arduino Uno
 Arduino IDE 1.0.5
 
 Requires:
-SFE_ISL29125_Library
+SparkFun_ISL29125_Arduino_Library
 
 This code is beerware.
 Distributed as-is; no warranty is given. 
 ******************************************************************************/
 
 #include <Wire.h>
-#include "SFE_ISL29125.h"
+#include "SparkFunISL29125.h"
 
 // Declare sensor object
 SFE_ISL29125 RGB_sensor;

@@ -1,5 +1,5 @@
 /******************************************************************************
-SFE_ISL29125.h
+SparkFunISL29125.h
 Core header file for the ISL29125 RGB sensor library.
 Jordan McConnell @ SparkFun Electronics
 25 Mar 2014
