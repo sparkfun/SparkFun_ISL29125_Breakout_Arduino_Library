@@ -14,8 +14,12 @@ Repository Contents
 * **/src** - Source files for the library (.cpp, .h).
 * **keywords.txt** - Keywords from this library that will be highlighted in the Arduino IDE. 
 * **library.properties** - General library properties for the Arduino package manager. 
-* 
 
+Documentation
+--------------
+
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/isl29125-rgb-light-sensor-hookup-guide?_ga=1.227771679.304927311.1426541708)** - Basic hookup guide for the.
+* **[Product Repository](https://github.com/sparkfun/ISL29125_Breakout)** - Main repository (including hardware files) for the <SparkFun ISL29125 Breakout>.
 
 
 License Information
