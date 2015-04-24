@@ -16,8 +16,8 @@ Repository Contents
 Documentation
 --------------
 
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/isl29125-rgb-light-sensor-hookup-guide?_ga=1.227771679.304927311.1426541708)** - Basic hookup guide for the.
-* **[Product Repository](https://github.com/sparkfun/ISL29125_Breakout)** - Main repository (including hardware files) for the <SparkFun ISL29125 Breakout>.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/isl29125-rgb-light-sensor-hookup-guide?_ga=1.227771679.304927311.1426541708)** - Basic hookup guide for the SparkFun ISL29125 Breakout.
+* **[Product Repository](https://github.com/sparkfun/ISL29125_Breakout)** - Main repository (including hardware files) for the SparkFun ISL29125 Breakout.
 
 
 License Information
