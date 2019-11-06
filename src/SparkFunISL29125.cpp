@@ -13,13 +13,13 @@ Arduino Uno
 Arduino IDE 1.0.5
 
 This code is beerware; if you see me (or any other SparkFun employee) at the local, and you've found our code helpful, please buy us a round!
-Distributed as-is; no warranty is given. 
+Distributed as-is; no warranty is given.
 ******************************************************************************/
 
 #include "SparkFunISL29125.h"
 
 // Constructor - Creates sensor object and sets I2C address
-SFE_ISL29125::SFE_ISL29125(uint8_t addr) 
+SFE_ISL29125::SFE_ISL29125(uint8_t addr)
 {
   _addr = addr;
 }
@@ -39,23 +39,23 @@ bool SFE_ISL29125::init()
 {
   bool ret = true;
   uint8_t data = 0x00;
-  
+
   // Start I2C
   Wire.begin();
-  
+
   // Check device ID
   data = read8(DEVICE_ID);
   if (data != 0x7D)
   {
     ret &= false;
   }
-  
+
   // Reset registers
   ret &= reset();
-  
+
   // Set to RGB mode, 10k lux, and high IR compensation
   ret &= config(CFG1_MODE_RGB | CFG1_10KLUX, CFG2_IR_ADJUST_HIGH, CFG_DEFAULT);
-  
+
   return ret;
 }
 
@@ -84,14 +84,14 @@ bool SFE_ISL29125::config(uint8_t config1, uint8_t config2, uint8_t config3)
 {
   bool ret = true;
   uint8_t data = 0x00;
-  
+
   // Set 1st configuration register
   write8(CONFIG_1, config1);
   // Set 2nd configuration register
   write8(CONFIG_2, config2);
   // Set 3rd configuration register
   write8(CONFIG_3, config3);
-  
+
   // Check if configurations were set correctly
   data = read8(CONFIG_1);
   if (data != config1)
@@ -165,11 +165,11 @@ uint8_t SFE_ISL29125::read8(uint8_t reg)
   Wire.beginTransmission(_addr);
   Wire.write(reg);
   Wire.endTransmission();
-  Wire.beginTransmission(_addr);
+//  Wire.beginTransmission(_addr);
   Wire.requestFrom(_addr,(uint8_t)1);
   uint8_t data = Wire.read();
-  Wire.endTransmission();
-  
+//  Wire.endTransmission();
+
   return data;
 }
 
@@ -180,7 +180,7 @@ void SFE_ISL29125::write8(uint8_t reg, uint8_t data)
   Wire.write(reg);
   Wire.write(data);
   Wire.endTransmission();
-  
+
   return;
 }
 
@@ -192,12 +192,12 @@ uint16_t SFE_ISL29125::read16(uint8_t reg)
   Wire.beginTransmission(_addr);
   Wire.write(reg);
   Wire.endTransmission();
-  
-  Wire.beginTransmission(_addr);
+
+//  Wire.beginTransmission(_addr);
   Wire.requestFrom(_addr, (uint8_t)2); // request 2 bytes of data
   data = Wire.read();
   data |= (Wire.read() << 8);
-  Wire.endTransmission();
+//  Wire.endTransmission();
 
   return data;
 }
@@ -208,6 +208,6 @@ void SFE_ISL29125::write16(uint8_t reg, uint16_t data)
   Wire.beginTransmission(_addr);
   Wire.write(reg);
   Wire.write(data);
-  Wire.write(data>>8); 
+  Wire.write(data>>8);
   Wire.endTransmission();
 }
